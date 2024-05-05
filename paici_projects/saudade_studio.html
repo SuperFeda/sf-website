@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>SF | PP - Saudade Studio</title>
+        <link rel="shortcut icon" type="image/x-icon" href="../images/png/site_icon.png" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="../css/default_style.css">
+        <link rel="stylesheet" href="../css/info_pages.css">
+    </head>
+    <body>
+
+        <div id="box">
+
+            <header>
+                <div id="site-title"><a href="../index.html"><b>SuperFeda</b></a></div>
+                <span class="material-symbols-outlined" id="header-dropdown" onclick="openHeaderDropdown()">menu</span>
+                <nav id="navbar">
+                    <ul id="nav-links">
+                        <li><a href="../index.html"><b><span class="material-symbols-outlined">edit</span>Главная</b></a></li>
+                        <li><a href="../portfolio.html"><b><span class="material-symbols-outlined">folder</span>Портфолио</b></a></li>
+                        <li><a href="../parici_projects.html"><b><span class="material-symbols-outlined">groups</span>Участие в проектах</b></a></li>
+                        <li><a href="../market.html"><b><span class="material-symbols-outlined">shopping_cart</span>Маркет</b></a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="bg"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
+            <div class="desc-content">
+                <h1>Saudade Studio</h1>
+                <h2>Че это?</h2>
+                <p>Saudade Studio - команда людей, которая создает модпаки и моды для Minecraft на энтузиазме.</p>
+                <h2>Как я там появился?</h2>
+                <p>Я просто опубликовал моды SK на CurseForge, Modrinth, Planet Minecraft и в какой-то момент их заметил ySh - основатель Saudade, написал в Discord сервере SK и после этого мы начали сотрудничать. Мне понравилось, что мы могли помогать друг другу: Saudade Skylight'у, а Skylight Saudade'у. Еще, в принципе, было интересно, какого это - сотрудничать. Поэтому я так просто согласился на это, хоть и по началу очень боялся, что SK станет зависимым от SS.</p>
+                <p>Первым тестовым заданием было исправить ошибку другого разработчика. Проблема была в том, что модель бура не могла найти GeckoLib анимацию, поэтому игра крашилась. Нужно было это исправить и я справился с данной задачей, причем довольно быстро, потому что, хоть я с кодом в то время не сильно дружил, но <a class="code">JSON</a> читать уже умел. Дальше начальник сказал доделать модификацию до конца и это я тоже сделал.</p>
+                <h2>Что я там делал?</h2>
+                <p>Может кто-то уже и догадался, исходя из текста выше, я занимался созданием модов для одной сборки. В силу ещё плохого понимания темы программирования, а уж особенно объектно-ориентированного Java мне приходилось выкручиваться, поэтому моды создавались в MCreator (программа, работающая по принципу генерации кода по шаблону и дальнейшей вставки его в итоговый проект и созданная для тех, кто не умеет писать код, но хочет создавать моды для Minecraft).</p>
+                <p>Первым модом, который я сделал, был мод на буры, про него говорил выше.</p>
+                <div class="images">
+                    <img src="../images/png/saudade/iron_drill.png">
+                    <p class="img-desc">Получение железного бура через выполнение квеста</p>
+                </div>
+                <p>А вот второй порученный мне мод, был мод на записки. Нужно было создать 16 предметов - записки и книгу, которая будет отображать текст записки по выбору в GUI. Может показаться, что мод не сильно сложный, но я же делал это на MCreator, а там функции ограничены. Поэтому мне приходилось выделять каждые 2-5 слов из текста, вставлять в книгу, выравнивать и так обрабатывать полностью весь текст 16 записок, а текста там не маленькие были. И это было не то, чтобы сложной задачей, больше долгой. А я человек такой, не нравится мне долго одну и туже вещь делать, поэтому и растянул создание такого простого мода на пол года. В конце концов я доделал мод и он получился достаточно высокого качества, в плане визуала, а про то, как он выглядит в коде и как он может влиять на оптимизацию игры - молчу.</p>
+                <div class="images">
+                    <img src="../images/png/saudade/paper_one_text.png">
+                    <p class="img-desc">Текст записки №1 из книги, что я делал</p>
+                </div>
+                <h2>Почему и когда ушел?</h2>
+                <p>Ушел я как раз после того, как доделал второй мод, это было в августе. Ушел потому что ОГЭ намечалось, да и хотел я заниматься только своими проектами.</p>
+            </div>
+
+        </div>
+
+        <script src="../js/header.js"></script>
+
+    </body>
+</html>

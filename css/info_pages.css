@@ -1,0 +1,115 @@
+.desc-content {
+    position: relative;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    margin-left: 22%;
+    max-width: 1100px;
+    padding: 5px 10px;
+    background-color: rgba(21, 40, 79, 0.4) /*#192a54*/;
+    border: 1px solid rgba(30, 53, 105, 0.8);
+    border-radius: 25px;
+
+    & h1 {
+        display: flex;
+        justify-content: center;
+        color: rgba(255, 255, 255, 0.8);
+        margin-top: 0.5%;
+        font-size: 45px;
+    }
+
+    & h2 {
+        color: rgba(255, 255, 255, 0.8);
+        margin-top: 2%;
+        font-size: 30px;
+        border-bottom: 1px solid rgba(30, 53, 105, 0.8);
+    }
+
+    & p {
+        color: rgba(255, 255, 255, 0.8);
+        margin-top: 1%;
+        font-size: 18px;
+    }
+
+    & .img-desc {
+        margin-top: 0%;
+        margin-bottom: 1%;
+        font-size: 16px;
+    }
+}
+
+.images {
+    margin-top: 1%;
+
+    & img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    & .img-desc {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+}
+
+.other-img {
+    margin-top: 1%;
+    gap: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.fact {
+    display: block;
+    border: 1px solid rgba(30, 53, 105, 0.8);
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 10px 10px;
+
+    & h3 {
+        color: white;
+    }
+
+    & p {
+        color: white;
+    }
+}
+
+.lore {
+    display: block;
+    border: 1px solid rgba(98, 55, 28, 0.8);
+    border-radius: 15px;
+    background: rgba(80, 46, 26, 0.3);
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 10px 10px;
+
+    & h3 {
+        color: white;
+        font-style: italic
+    }
+
+    & p {
+        color: white;
+        font-style: italic
+    }
+}
+
+/*.img-desc {*/
+/*    background: rgba(0, 0, 0, 0.3);*/
+/*    border: 1px solid rgba(192, 190, 190, 0.5);*/
+/*    border-radius: 10px;*/
+/*}*/
+
+@media (max-width: 800px) {
+    .desc-content {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>SF | Portfolio - SF Website</title>
+        <link rel="shortcut icon" type="image/x-icon" href="../images/png/site_icon.png" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="../css/default_style.css">
+        <link rel="stylesheet" href="../css/sf_website.css">
+        <link rel="stylesheet" href="../css/info_pages.css">
+    </head>
+    <body>
+
+        <div id="box">
+
+            <header>
+                <div id="site-title"><a href="../index.html"><b>SuperFeda</b></a></div>
+                <span class="material-symbols-outlined" id="header-dropdown" onclick="openHeaderDropdown()">menu</span>
+                <nav id="navbar">
+                    <ul id="nav-links">
+                        <li><a href="../index.html"><b><span class="material-symbols-outlined">home</span>Главная</b></a></li>
+                        <li><a href="../portfolio.html"><b><span class="material-symbols-outlined">folder</span>Портфолио</b></a></li>
+                        <li><a href="../parici_projects.html"><b><span class="material-symbols-outlined">groups</span>Участие в проектах</b></a></li>
+<!--                        <li><a href="../market.html"><b><span class="material-symbols-outlined">shopping_cart</span>Маркет</b></a></li>-->
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="bg"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
+            <div class="desc-content">
+                <h1>SF's сайт</h1>
+                <p>Особо говорить не о чем, в данном случае нужно видеть всё своими глазами, а вы и так уже смотрите данный проект. Попрошу поставить класс под запись. Наберем 100 классов за год?</p>
+                <p></br>Хочу дать возможность попробовать <b>CSS</b> тому, кто не писал на нем до этого. Поиздевайтесь над квадратом ниже, почти как вам угодно.</p>
+
+                <div class="menu">
+
+                    <div class="inputs">
+                        <div class="border-par">
+                            <a class="css-par">border:</a>
+                            <input id="border-input" placeholder="3px solid #fff">
+                        </div>
+                        <div class="border-radius-par">
+                            <a class="css-par">border-radius:</a>
+                            <input id="border-radius-input" placeholder="50px">
+                        </div>
+                        <div class="background-par">
+                            <a class="css-par">background:</a>
+                            <input id="background-input" placeholder="rgba(30, 53, 105, 0.8)">
+                        </div>
+                    </div>
+
+                    <div id="square"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="../js/scripts.js"></script>
+        <script src="../js/header.js"></script>
+
+    </body>
+</html>

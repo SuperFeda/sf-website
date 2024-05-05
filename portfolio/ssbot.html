@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>SF | Portfolio - SSBot</title>
+        <link rel="shortcut icon" type="image/x-icon" href="../images/png/site_icon.png" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="../css/default_style.css">
+        <link rel="stylesheet" href="../css/info_pages.css">
+    </head>
+    <body>
+
+        <div id="box">
+
+            <header>
+                <div id="site-title"><a href="../index.html"><b>SuperFeda</b></a></div>
+                <span class="material-symbols-outlined" id="header-dropdown" onclick="openHeaderDropdown()">menu</span>
+                <nav id="navbar">
+                    <ul id="nav-links">
+                        <li><a href="../index.html"><b><span class="material-symbols-outlined">home</span>Главная</b></a></li>
+                        <li><a href="../portfolio.html"><b><span class="material-symbols-outlined">folder</span>Портфолио</b></a></li>
+                        <li><a href="../parici_projects.html"><b><span class="material-symbols-outlined">groups</span>Участие в проектах</b></a></li>
+<!--                        <li><a href="../market.html"><b><span class="material-symbols-outlined">shopping_cart</span>Маркет</b></a></li>-->
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="bg"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
+            <div class="desc-content">
+                <h1>SkylightBot</h1>
+                <h2>Что такое SkylightServices?</h2>
+                <p>Перед тем, как я начну говорить про бота, немного расскажу о проекте, для которого он был создан. Этим проектом был SkylightServices (сокращенно SS) - студия выполняющая услуги, специализированные на Minecraft. В спектр услуг входило 18 разных услуг, вот полный список:</p>
+                <div class="images">
+                    <img src="../images/png/ssbot/services.PNG">
+                </div>
+                <p>Также студия была основана мной и входила в состав комплекса <a href="../paici_projects/skylight_production.html" class="url">SkylightProduction</a>, где помимо SS было еще две студии: SM и MDE. О них подробнее <a href="../paici_projects/skylight_production.html" class="url">тут</a>.</p>
+                <h2>Теперь про бота</h2>
+                <p>SkylightBot - бот созданный для работы с клиентами и работниками SkylightServices. Умеет помогать с оформлением заказа через ЛС с заказчиком, оформлением отзывов, работать с промокодами, отвечать на заранее заготовленные вопросы через <a class="code">select menu</a> и также имеет небольшой набор команд, которыми в основном может пользоваться только <a class="code">owner</a> студии.</p>
+                <h2>Главное сообщение</h2>
+                <div class="other-img">
+                    <img src=../images/png/ssbot/ssbot_title.png>
+                </div>
+                <h2>Промокоды</h2>
+                <p>Уделю внимание теме с промокодами. Мой бот разделяет коды на три типа: промокод на услугу (<a class="code">service_code</a>), премиумный промокод (<a class="code">premium_code</a>) и обычный промокод (<a class="code">common_code</a>)</p>
+                <p>Промокод на услугу вводится в самом начале оформления заказа и дарит бесплатное выполнение услуги для заказчика. Также имеет уникальную <b>обязательную</b> настройку в <a class="code">JSON</a> - <a class="code">service</a> - хранит в себе как раз ту услугу, которая будет подарена после ввода промокода.</p>
+                <p>Обычный промокод вводится в самом конце оформления заказа и не имеет каких-либо особенностей, от того он и обычный.</p>
+                <p>Премиумный промокод тоже вводится в самом конце оформления заказа и имеет собственный <b>обязательный</b> параметр настройки <a class="code">count</a> в <a class="code">JSON</a>, отвечающий за кол-во заказов, на которые он будет работать. То есть, если <a class="code">count</a> какого-то промокода == 7, то за одну активацию промокода его процент скидки будет активен на 7 заказов подряд.</p>
+                <p>Также у кодов есть параметры настройки, которые можно наложить на любой тип промокода, вот они сверху вниз:</br><a class="code">discount_rate</a> - процент скидки.</br><a class="code">count_for_use</a> - кол-во сколько раз смогут ввести промокод разные пользователи.</br><a class="code">date</a> - дата, когда промокод перестает действовать. (Формат ввода даты: <a class="code">day.month.year hour:minute</a>.)</br><a class="code">users</a> - список ID пользователей, которые могут активировать промокод.</br>Из всех этих параметров обязательно вводить только <a class="code">discount_rate</a>.</p>
+                <h2>Процесс оформления заказа</h2>
+                <p>Покажу это несколькими скриншотами:</p>
+                <div class="other-img">
+                    <img class="order_image" src="../images/png/ssbot/order1.png">
+                    <img class="order_image" src="../images/png/ssbot/order2.png">
+                    <img class="order_image" src="../images/png/ssbot/order3.png">
+                </div>
+                <p>В последнем сообщении предлагается ввести промокод или оплатить услугу. Если у клиента есть промокод, который он хочет использовать, ему необходимо нажать на кнопку «Ввести промокод». После этого появится окно, в котором нужно будет указать промокод. Если промокод введён верно, клиент получит уведомление об успешной активации. В противном случае он получит сообщение о том, что промокод не был активирован, и причину этого. Затем клиенту нужно нажать на кнопку «Оплатить», после чего его заказ будет отправлен сотрудникам SS в закрытый текстовый канал, а заказчик получит ссылку для оплаты.</p>
+                <h2>Создание отзывов</h2>
+                <div class="other-img">
+                    <img class="rate_image" src="../images/png/ssbot/rate.png">
+                    <img class="rate_image" src="../images/png/ssbot/rate2.png">
+                </div>
+                <p>Небольшое уточнение, что отзыв заполняется не в ЛС заказчика, а на самом Discord сервере в приватной ветке. После нажатия на кнопку отправки отзыва, отзыв отправиться в отдельный, публичный текстовый канал с отзывами и активируется таймер 20 секунд, по завершению которого ветка удалится.</p>
+<!--                <h2>bot_config.json</h2>-->
+<!--                <p><a class="code">bot_can_take_order</a> (тип: <a class="code">bool</a>, по умолчанию == <a class="code">true</a> ) - параметр блокирующий создание новых заказов. Редактируется через slash команду stop_take_order, доступная только <a class="code">owner</a>.</p>-->
+            </div>
+
+        </div>
+
+        <script src="../js/header.js"></script>
+
+    </body>
+</html>

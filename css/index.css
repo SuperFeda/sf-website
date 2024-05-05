@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.dark-theme {
+	--btn-bg-color: #333333FF;
+	--white-color: #ffffff;
+}
+:root {
+	--btn-bg-color: #ececec;
+	--white-color: #000000;
+}
+
+#box {
+	overflow: hidden;
+}
+
+#title {
+	z-index: 222;
+	position: absolute;
+	  top: 30%;
+	  left: 16%;
+	max-width: 600px;
+	/*margin-top: 13%;*/
+	/*margin-left: 13%;*/
+
+	& p {
+		font-size: 18px;
+		color: whitesmoke;
+		transition: all 0.5s ease 0s;
+	}
+
+	& h1 {
+		font-family: "Anton", sans-serif;
+		font-size: 80px;
+		font-style: normal;
+		text-transform: uppercase;
+		/*background: linear-gradient(
+				to right,
+				#7953cd 20%,
+				#00affa 30%,
+				#0190cd 70%,
+				#764ada 80%
+		);*/
+		background: linear-gradient(
+				to right,
+				#cd5353 20%,
+				#3f00fa 30%,
+				#4501cd 70%,
+				#da4a4a 80%
+		);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 500% auto;
+		animation: textShine 10s ease-in-out infinite alternate;
+	}
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+#buttons {
+	margin-top: 2%;
+}
+
+.message {
+	background-color: #54a8dc;
+	font-size: 15px;
+	border-radius: 30px;
+	padding: 5px 20px;
+	color: #ffffff;
+	z-index: 221;
+}
+
+.tanks {
+	max-width: 230px;
+	max-height: 100px;
+	position: absolute;
+	  top: 62%;
+	  left: 41%;
+}
+
+.bounty {
+	max-width: 230px;
+	max-height: 100px;
+	position: absolute;
+	  top: 43%;
+	  left: 2%;
+}
+
+.fridge {
+	max-width: 270px;
+	max-height: 70px;
+	position: absolute;
+	  left: 11%;
+	  top: 18%;
+}
+
+.biology {
+	max-width: 330px;
+	max-height: 200px;
+	padding: 7px 23px;
+	position: absolute;
+	  left: 45%;
+	  top: 28%;
+}
+
+.pc {
+	max-width: 330px;
+	max-height: 100px;
+	padding: 7px 23px;
+	position: absolute;
+	  left: 10%;
+	  top: 68%;
+}
+
+#super-feda {
+	height: 670px;
+	width: 570px;
+	position: absolute;
+	  left: 65%;
+	  top: 30%;
+	z-index: 223;
+}
+
+#circle-one {
+	position: absolute;
+	margin-top: 20%;
+	margin-left: 70%;
+	background-color: rgba(0, 0, 0, 0.9);
+	height: 500px;
+	width: 500px;
+	border-radius: 49% 51% 78% 22% / 29% 27% 73% 71%;
+}
+
+#circle-two {
+	position: absolute;
+	margin-top: 12%;
+	margin-left: 59%;
+	background-color: rgba(82, 107, 255, 0.85);
+	height: 500px;
+	width: 500px;
+	border-radius: 29% 71% 32% 68% / 29% 39% 61% 71%;
+}
+
+#buttons {
+	margin-top: 3%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+#github-btn {
+	font-size: 15px;
+	color: rgb(109, 116, 126);
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: all 0.5s ease 0s;
+	border: 2px solid rgb(109, 116, 126);
+	background-color: transparent;
+	max-width: 110px;
+	max-height: 45px;
+	display: flex;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+	gap: 3px;
+
+	&:hover {
+		background-color: rgb(22, 25, 35);
+		color: white;
+		transform: scale(1.05);
+	}
+}
+#github-btn svg g g g path {
+	fill: rgb(132, 141, 151);
+	transition: all 0.5s ease 0s;
+}
+#github-btn:hover svg g g g path {
+	fill: white;
+	margin-right: 100%;
+}
+
+#modrinth-btn {
+	font-size: 15px;
+	color: rgb(27, 217, 106);
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: all 0.5s ease 0s;
+	border: 2px solid rgb(27, 217, 106);
+	background-color: transparent;
+	max-width: 110px;
+	max-height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+
+	&:hover {
+		background-color: rgb(27, 217, 106);
+		color: white;
+		transform: scale(1.05);
+	}
+}
+
+#stack-overflow-btn {
+	font-size: 15px;
+	color: rgb(0, 89, 153);
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: all 0.5s ease 0s;
+	border: 2px solid rgb(0, 89, 153);
+	background-color: transparent;
+	max-width: 200px;
+	max-height: 45px;
+	display: flex;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+	gap: 5px;
+
+	&:hover {
+		background-color: rgb(0, 89, 153);
+		color: white;
+		transform: scale(1.05);
+	}
+}
+
+#stack-overflow-btn:hover svg path {
+	fill: white;
+}
+#stack-overflow-btn svg path {
+	fill: rgb(0, 89, 153);
+	transition: all 0.5s ease 0s;
+}
+
+#boosty-btn {
+	font-size: 15px;
+	color: rgb(241, 95, 44);
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: all 0.5s ease 0s;
+	border: 2px solid rgb(241, 95, 44);
+	background-color: transparent;
+	max-width: 200px;
+	max-height: 45px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	gap: 4px;
+
+	&:hover {
+		background-color: rgb(241, 95, 44);
+		color: white;
+		transform: scale(1.05);
+	}
+}
+
+@media (max-width: 800px) {
+	#title {
+		position: absolute;
+		  top: 30%;
+		  left: 2%;
+		  right: 2%;
+	}
+
+	.tanks {
+		position: absolute;
+		  top: 62%;
+		  left: 55%;
+	}
+
+	.bounty {
+		position: absolute;
+		  top: 25%;
+		  left: 2%;
+	}
+
+	.fridge {
+		position: absolute;
+		  left: 3%;
+		  top: 9%;
+	}
+
+	.biology {
+		padding: 7px 23px;
+		position: absolute;
+		  left: 45%;
+		  top: 17%;
+	}
+
+	.pc {
+		padding: 7px 23px;
+		position: absolute;
+		  left: 4%;
+		  top: 71%;
+	}
+
+	#super-feda {
+		position: absolute;
+		  left: 10%;
+		  top: 80%;
+	}
+
+	#circle-one {
+		top: 80%;
+		left: -48%;
+	}
+
+	#circle-two {
+		top: 70%;
+		left: -54%;
+	}
+}

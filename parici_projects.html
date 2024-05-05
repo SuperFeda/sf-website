@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>SF | Participation in projects</title>
+        <link rel="shortcut icon" type="image/x-icon" href="./images/png/site_icon.png" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="./css/default_style.css">
+        <link rel="stylesheet" href="./css/parici_projects.css">
+    </head>
+    <body>
+
+        <div id="box">
+
+            <header>
+                <div id="site-title"><a href="./index.html"><b>SuperFeda</b></a></div>
+                <span class="material-symbols-outlined" id="header-dropdown" onclick="openHeaderDropdown()">menu</span>
+                <nav id="navbar">
+                    <ul id="nav-links">
+                        <li><a href="./index.html"><b><span class="material-symbols-outlined">home</span>Главная</b></a></li>
+                        <li><a href="./portfolio.html"><b><span class="material-symbols-outlined">folder</span>Портфолио</b></a></li>
+                        <li><a href="./parici_projects.html"><b><i><u><span class="material-symbols-outlined">groups</span>Участие в проектах</u></i></b></a></li>
+                        <li><a href="./market.html"><b><span class="material-symbols-outlined">shopping_cart</span>Маркет</b></a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="bg"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
+            <div class="projects">
+
+                <div class="card skylight-production" onclick="location.href='./paici_projects/skylight_production.html'">
+                    <img src="./images/png/paici_project/sk_logo_miniature.png"/>
+                    <div class="card-content">
+                        <h3 class="card-text">SkylightProduction</h3>
+                        <a class="card-text">Мой комплекс студий по разработке для Minecraft</a>
+                    </div>
+                </div>
+
+                <div class="card saudade-studio" onclick="location.href='./paici_projects/saudade_studio.html'">
+                    <img src="./images/png/paici_project/saudade.png"/>
+                    <div class="card-content">
+                        <h3 class="card-text">Saudade Studio</h3>
+                        <a class="card-text">Команда людей, создающих моды и модпаки для Minecraft</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="./js/header.js"></script>
+
+    </body>
+</html>
